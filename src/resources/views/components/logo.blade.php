@@ -1,0 +1,1 @@
+<h1 class="text-blue-400 font-bold text-7xl">COOLORS</h1>

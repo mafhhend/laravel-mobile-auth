@@ -1,0 +1,51 @@
+{
+    "name": "mafhhend/laravel-mobile-auth",
+    "description": "simple mobile authentication for laravel framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mafhhend",
+            "email": "mafhh.end@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com",
+    "keywords": [
+        "mobile auth",
+        "saman khoshghadam",
+        "laravel package",
+        "package"
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": ">=6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mafhhend\\LaravelMobileAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mafhhend\\LaravelMobileAuth\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-package": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "providers": [
+            "Mafhhend\\LaravelMobileAuth\\ServiceProvider\\LaravelMobileAuthServiceProvider",
+            "Mafhhend\\LaravelMobileAuth\\ServiceProvider\\RouteServiceProvider"
+        ],
+        "aliases": {
+            "LaravelMobileAuth": "Mafhhend\\LaravelMobileAuth\\ServiceProvider\\LaravelMobileAuthRouteServiceProvider"
+        }
+    }
+}
