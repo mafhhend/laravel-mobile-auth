@@ -41,7 +41,7 @@ class LaravelMobileAuthRouteServiceProvider extends RouteServiceProvider
             Route::prefix('api')
                 ->middleware('api')
                 ->namespace($this->namespace)
-                ->group(__DIR__.'/../routes/web.php');
+                ->group(__DIR__.'/../routes/api.php');
 
             Route::middleware('web')
                 ->namespace($this->namespace)
